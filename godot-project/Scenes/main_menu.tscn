@@ -1,0 +1,436 @@
+[gd_scene load_steps=16 format=4 uid="uid://ctuyd7w2aou2i"]
+
+[ext_resource type="Script" uid="uid://cwdf1gayfcgyq" path="res://Scripts/main_menu.gd" id="1_0xq5v"]
+[ext_resource type="Shader" uid="uid://b2s0w25q4ghwm" path="res://Scripts/level1scroll.gdshader" id="2_868av"]
+[ext_resource type="Texture2D" uid="uid://daevlu0kytyfk" path="res://Pixel Adventure 1/Free/Background/Green.png" id="3_2mexj"]
+[ext_resource type="Texture2D" uid="uid://nn773sqyof76" path="res://Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="3_yf653"]
+[ext_resource type="Shader" uid="uid://ckcb8ptd7omqr" path="res://Scripts/level2scroll.gdshader" id="4_66fd5"]
+[ext_resource type="Texture2D" uid="uid://dslybyltni122" path="res://Pixel Adventure 1/Free/Main Characters/Ninja Frog/Jump (32x32).png" id="4_hs3dk"]
+[ext_resource type="FontFile" uid="uid://cuijx6mqeqd44" path="res://Pixel Adventure 1/Free/Menu/Text/Text (White) (8x10).png" id="4_y3s7q"]
+[ext_resource type="Texture2D" uid="uid://cj68pn5wef0d6" path="res://Pixel Adventure 1/Free/Background/Brown.png" id="5_0m1p0"]
+[ext_resource type="Texture2D" uid="uid://c60kkvod33lvy" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Idle (32x32).png" id="5_c5eq7"]
+[ext_resource type="AudioStream" uid="uid://btxoi6i5ir3lp" path="res://Audio/Energetic.mp3" id="10_dfurr"]
+[ext_resource type="Texture2D" uid="uid://4i3x730b8kkp" path="res://Pixel Adventure 2/Mushroom/Idle (32x32).png" id="10_xklug"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p2l6a"]
+shader = ExtResource("2_868av")
+shader_parameter/paused = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o1426"]
+shader = ExtResource("4_66fd5")
+shader_parameter/paused = false
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ibqh1"]
+texture = ExtResource("3_yf653")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1rueh"]
+sources/0 = SubResource("TileSetAtlasSource_ibqh1")
+
+[node name="MainMenu" type="Node2D"]
+position = Vector2(576, 324)
+script = ExtResource("1_0xq5v")
+level_name = "main_menu"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_dfurr")
+volume_db = -15.0
+autoplay = true
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+material = SubResource("ShaderMaterial_p2l6a")
+layout_mode = 0
+offset_right = 576.0
+offset_bottom = 672.0
+texture = ExtResource("3_2mexj")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Background"]
+material = SubResource("ShaderMaterial_o1426")
+layout_mode = 0
+offset_left = 576.0
+offset_right = 1152.0
+offset_bottom = 672.0
+texture = ExtResource("5_0m1p0")
+stretch_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Background"]
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAAAABIAAAAGAAEAAAAAABMAAAAGAAEAAAAAABQAAAAGAAIAAAABABIAAAAJAAEAAAABABMAAAAHAAEAAAABABQAAAAHAAIAAAACABIAAAAKAAEAAAACABMAAAAHAAEAAAACABQAAAAHAAIAAAADABIAAAAHAAEAAAADABMAAAAHAAEAAAADABQAAAAHAAIAAAAEABIAAAAHAAEAAAAEABMAAAAHAAEAAAAEABQAAAAHAAIAAAAFABIAAAAHAAEAAAAFABMAAAAHAAEAAAAFABQAAAAHAAIAAAAGABIAAAAJAAAAAAAGABMAAAAJAAEAAAAGABQAAAAHAAIAAAAHABIAAAAKAAAAAAAHABMAAAAKAAEAAAAHABQAAAAHAAIAAAAIABIAAAAHAAEAAAAIABMAAAAHAAEAAAAIABQAAAAHAAIAAAAJABIAAAAHAAEAAAAJABMAAAAHAAEAAAAJABQAAAAHAAIAAAAKABIAAAAHAAEAAAAKABMAAAAHAAEAAAAKABQAAAAHAAIAAAALABIAAAAHAAEAAAALABMAAAAHAAEAAAALABQAAAAHAAIAAAAMABIAAAAHAAEAAAAMABMAAAAHAAEAAAAMABQAAAAHAAIAAAAWABIAAAAHAAUAAAAWABMAAAAHAAUAAAAXABIAAAAHAAUAAAAXABMAAAAHAAUAAAAYABIAAAAHAAUAAAAYABMAAAAHAAUAAAAZABIAAAAHAAUAAAAZABMAAAAHAAUAAAAaABIAAAAHAAUAAAAaABMAAAAHAAUAAAAbABIAAAAJAAQAAAAbABMAAAAJAAUAAAAcABIAAAAKAAQAAAAcABMAAAAKAAUAAAAdABIAAAAHAAUAAAAdABMAAAAHAAUAAAAeABIAAAAHAAUAAAAeABMAAAAHAAUAAAAfABIAAAAHAAUAAAAfABMAAAAHAAUAAAAgABIAAAAJAAQAAAAgABMAAAAJAAUAAAAhABIAAAAKAAQAAAAhABMAAAAKAAUAAAAiABIAAAAHAAUAAAAiABMAAAAHAAUAAAAjABIAAAAIAAUAAAAjABMAAAAIAAUAAAAWABQAAAAHAAYAAAAXABQAAAAHAAYAAAAYABQAAAAHAAYAAAAZABQAAAAHAAYAAAAaABQAAAAHAAYAAAAbABQAAAAHAAYAAAAcABQAAAAHAAYAAAAdABQAAAAHAAYAAAAeABQAAAAHAAYAAAAfABQAAAAHAAYAAAAgABQAAAAHAAYAAAAhABQAAAAHAAYAAAAiABQAAAAHAAYAAAAjABQAAAAIAAYAAAAAAA8AAAAGAAAAAAAGAA8AAAAHAAAAAAAHAA8AAAAHAAAAAAAIAA4AAAARAAEAAAAIAA8AAAAHAAAAAAAJAA4AAAASAAEAAAAJAA8AAAAHAAAAAAAKAA4AAAATAAEAAAAKAA8AAAAHAAAAAAALAA8AAAAHAAAAAAAMAA8AAAAHAAAAAAAbAA8AAAAHAAQAAAAcAA8AAAAHAAQAAAAhAAwAAAAGAAQAAAAhAA4AAAAGAAUAAAAhAA8AAAAKAAUAAAAiAA4AAAAHAAUAAAAiAA8AAAAHAAUAAAAjAA4AAAAIAAUAAAAjAA8AAAAIAAUAAAAWAA8AAAAHAAQAAAAXAA8AAAAHAAQAAAAYAA8AAAAHAAQAAAAZAA8AAAAHAAQAAAAaAA8AAAAHAAQAAAAbAA0AAAANAAEAAAAbAA4AAAANAAIAAAAcAA0AAAAOAAEAAAAcAA4AAAAOAAIAAAAdAA8AAAAHAAQAAAAeAA4AAAAGAAQAAAAeAA8AAAAKAAUAAAAfAA4AAAAIAAQAAAAfAA8AAAAJAAUAAAAgAA8AAAAHAAQAAAAhAA0AAAAGAAUAAAAiAAwAAAAHAAQAAAAiAA0AAAAHAAUAAAAjAAwAAAAIAAQAAAAjAA0AAAAIAAUAAAAWABEAAAAKAAUAAAAXABEAAAAHAAUAAAAYABEAAAAHAAUAAAAZABEAAAAHAAUAAAAaABEAAAAHAAUAAAAbABEAAAAHAAUAAAAcABEAAAAHAAUAAAAdABEAAAAHAAUAAAAeABEAAAAHAAUAAAAfABEAAAAHAAUAAAAgABEAAAAHAAUAAAAhABEAAAAHAAUAAAAiABEAAAAHAAUAAAAiABAAAAAHAAUAAAAhABAAAAAHAAUAAAAgABAAAAAHAAUAAAAfABAAAAAHAAUAAAAeABAAAAAHAAUAAAAdABAAAAAHAAUAAAAcABAAAAAHAAUAAAAbABAAAAAHAAUAAAAaABAAAAAHAAUAAAAZABAAAAAHAAUAAAAYABAAAAAHAAUAAAAXABAAAAAHAAUAAAAWABAAAAAKAAQAAAAjABAAAAAIAAUAAAAjABEAAAAIAAUAAAAAABAAAAAGAAEAAAAAABEAAAAGAAEAAAABABAAAAAHAAEAAAABABEAAAAJAAAAAAACABAAAAAHAAEAAAACABEAAAAKAAAAAAADABAAAAAHAAEAAAADABEAAAAHAAEAAAAEABAAAAAHAAEAAAAEABEAAAAHAAEAAAAFABAAAAAHAAEAAAAFABEAAAAHAAEAAAAGABAAAAAHAAEAAAAGABEAAAAHAAEAAAAHABAAAAAHAAEAAAAHABEAAAAHAAEAAAAIABAAAAAHAAEAAAAIABEAAAAHAAEAAAAJABAAAAAHAAEAAAAJABEAAAAHAAEAAAAKABAAAAAHAAEAAAAKABEAAAAHAAEAAAALABAAAAAHAAEAAAALABEAAAAHAAEAAAAMABAAAAAHAAEAAAAMABEAAAAHAAEAAAANABAAAAAHAAEAAAANABEAAAAJAAAAAAANABIAAAAJAAEAAAANABMAAAAHAAEAAAAOABAAAAAHAAEAAAAOABEAAAAKAAAAAAAOABIAAAAKAAEAAAAOABMAAAAHAAEAAAAPABAAAAAHAAEAAAAPABEAAAAHAAEAAAAPABIAAAAHAAEAAAAPABMAAAAHAAEAAAAQABAAAAAHAAEAAAAQABEAAAAHAAEAAAAQABIAAAAHAAEAAAAQABMAAAAHAAEAAAARABAAAAAHAAEAAAARABEAAAAHAAEAAAARABIAAAAHAAEAAAARABMAAAAHAAEAAAASABAAAAAHAAUAAAASABEAAAAHAAUAAAASABIAAAAHAAUAAAASABMAAAAHAAUAAAATABAAAAAHAAUAAAATABEAAAAHAAUAAAATABIAAAAHAAUAAAATABMAAAAHAAUAAAAUABAAAAAHAAUAAAAUABEAAAAHAAUAAAAUABIAAAAHAAUAAAAUABMAAAAHAAUAAAAVABAAAAAJAAQAAAAVABEAAAAJAAUAAAAVABIAAAAHAAUAAAAVABMAAAAHAAUAAAANAA8AAAAHAAAAAAAOAA8AAAAHAAAAAAAPAA8AAAAHAAAAAAAQAA8AAAAHAAAAAAARAA8AAAAHAAAAAAASAA8AAAAHAAQAAAATAA8AAAAHAAQAAAAUAA8AAAAHAAQAAAAVAA8AAAAHAAQAAAASABQAAAAHAAYAAAATABQAAAAHAAYAAAAUABQAAAAHAAYAAAAVABQAAAAHAAYAAAARABQAAAAHAAIAAAAQABQAAAAHAAIAAAAPABQAAAAHAAIAAAAOABQAAAAHAAIAAAANABQAAAAHAAIAAAACAAwAAAAHAAAAAAACAA0AAAAHAAEAAAACAA4AAAAHAAEAAAADAAwAAAAIAAAAAAADAA0AAAAIAAEAAAADAA4AAAAJAAEAAAAEAA4AAAAIAAAAAAABAAwAAAAGAAAAAAABAA0AAAAGAAEAAAABAA4AAAAGAAEAAAABAA8AAAAKAAEAAAACAA8AAAAHAAEAAAADAA8AAAAHAAEAAAAEAA8AAAAJAAEAAAAFAA8AAAAHAAAAAAAgAAoAAAARAAIAAAAhAAoAAAASAAIAAAAiAAoAAAATAAIAAAA=")
+tile_set = SubResource("TileSet_1rueh")
+
+[node name="Jump(32x32)" type="Sprite2D" parent="Background"]
+position = Vector2(83, 296)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("4_hs3dk")
+
+[node name="Idle(32x32)" type="Sprite2D" parent="Background"]
+position = Vector2(1073, 280)
+rotation = 3.14159
+scale = Vector2(2.5, -2.5)
+texture = ExtResource("5_c5eq7")
+hframes = 11
+
+[node name="Idle(32x32)2" type="Sprite2D" parent="Background"]
+position = Vector2(480, 440)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("10_xklug")
+hframes = 14
+
+[node name="Idle(32x32)3" type="Sprite2D" parent="Background"]
+position = Vector2(896, 376)
+rotation = 3.14159
+scale = Vector2(2.5, -2.5)
+texture = ExtResource("10_xklug")
+hframes = 14
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -333.5
+offset_top = -210.0
+offset_right = 333.5
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(333.5, 0)
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("4_y3s7q")
+theme_override_font_sizes/font_size = 120
+text = "HOPPER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controller Assignments" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -568.0
+offset_top = -316.0
+offset_right = -88.0
+offset_bottom = -253.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(240, 0)
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("4_y3s7q")
+theme_override_font_sizes/font_size = 30
+text = "PLAYER 1: KEYBOARD
+PLAYER 2: CONTROLLER"
+
+[node name="1Player" type="Button" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -415.5
+offset_top = -13.0
+offset_right = -100.5
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(157.5, 0)
+theme_override_fonts/font = ExtResource("4_y3s7q")
+theme_override_font_sizes/font_size = 30
+text = "1 PLAYER"
+
+[node name="2Players" type="Button" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 100.5
+offset_top = -13.0
+offset_right = 415.5
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(157.5, 0)
+theme_override_fonts/font = ExtResource("4_y3s7q")
+theme_override_font_sizes/font_size = 30
+text = "2 PLAYERS"
+
+[node name="Controls" type="Button" parent="."]
+visible = false
+offset_left = 416.0
+offset_top = -316.0
+offset_right = 567.0
+offset_bottom = -252.0
+theme_override_fonts/font = ExtResource("4_y3s7q")
+theme_override_font_sizes/font_size = 22
+text = "CONTROLS"
+
+[node name="ControlsMenu" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DarkPanel" type="Panel" parent="ControlsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DarkPanel2" type="Panel" parent="ControlsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ControlsText" type="Label" parent="ControlsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -408.0
+offset_top = -196.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_y3s7q")
+theme_override_font_sizes/font_size = 25
+text = "KEYBOARD:
+
+
+
+A: LEFT
+D: RIGHT
+SPACE: JUMP
+LEFT SHIFT: DASH"
+horizontal_alignment = 1
+
+[node name="ControlsText2" type="Label" parent="ControlsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.0
+offset_top = -196.0
+offset_right = 408.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_y3s7q")
+theme_override_font_sizes/font_size = 25
+text = "CONTROLLER:
+
+
+
+L STICK: LEFT+RIGHT
+A OR B: JUMP
+RT: DASH"
+horizontal_alignment = 1
+
+[node name="ControlsClose" type="Button" parent="ControlsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = 76.0
+offset_right = 72.0
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_y3s7q")
+text = "CLOSE"
+
+[connection signal="pressed" from="1Player" to="." method="_on_1_player_pressed"]
+[connection signal="pressed" from="2Players" to="." method="_on_2_players_pressed"]
+[connection signal="pressed" from="Controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="ControlsMenu/ControlsClose" to="." method="_on_controls_close_pressed"]

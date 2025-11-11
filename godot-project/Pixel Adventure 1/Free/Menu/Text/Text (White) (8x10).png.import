@@ -1,0 +1,25 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://cuijx6mqeqd44"
+path="res://.godot/imported/Text (White) (8x10).png-ac76dbe751f49e6f27beca6ba9772ebc.fontdata"
+
+[deps]
+
+source_file="res://Pixel Adventure 1/Free/Menu/Text/Text (White) (8x10).png"
+dest_files=["res://.godot/imported/Text (White) (8x10).png-ac76dbe751f49e6f27beca6ba9772ebc.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray("65-90", "32", "32", "32", "32", "48-57", "46", "44", "58", "63", "33", "40-41", "43", "45")
+kerning_pairs=PackedStringArray()
+columns=10
+rows=5
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+ascent=0
+descent=0
+fallbacks=[]
+compress=true
+scaling_mode=2
