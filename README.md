@@ -1,6 +1,6 @@
 # 🐸 Hopper
 
-A small 2D platformer built in Godot where you guide a nimble frog through tricky terrain. Leap, dodge, and time your jumps to survive!
+A small 2D platformer built in Godot where you guide a nimble frog through tricky terrain. Leap, dash, and try to get as many points as you can without losing all 3 lives!
 
 ---
 
