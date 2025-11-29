@@ -82,10 +82,6 @@ Prefer to play offline?
 
 ---
 
-## 📄 License
+## 📝 License
 
-This project does not use a formal license.
-
-> Pixel Adventure assets used under public domain license. Attribution not required.
-
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
