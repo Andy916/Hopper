@@ -4,7 +4,7 @@ A small 2D platformer built in Godot where you guide a nimble frog through trick
 
 ## 🎮 Play the Game
 
-👉 [Play Hopper in your browser](https://andy916.github.io/Hopper)  
+👉 [Play Hopper in your browser](https://andy916.github.io/hopper/)  
 *(No install required — runs directly in Chrome, Firefox, or Edge)*
 
 ## 🕹️ Controls
